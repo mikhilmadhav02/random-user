@@ -1,0 +1,113 @@
+<div [style.backgroundColor]="bg" id="first"  class="  text-center container-fluid ">
+
+    <h1 class="">Randon User on Refresh</h1>
+
+    <!-- box -->
+    <div id="page" class="container  ">
+        <br>
+
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-7">
+                <div><img width="100px" height="150px"
+                        [src]="response.image"
+                        alt="">
+
+                    <h5>{{response.firstName}}{{response.lastName}}</h5>
+                    <p>{{response.gender}}</p>
+                </div>
+
+                <br>
+
+
+
+                <!-- first row -->
+                <div class="row">
+                    <div class="col-6">
+                        <h6>Birth Date</h6>
+                        <p>{{response.birthDate}}</p>
+                    </div>
+                    <!--  -->
+                    <div class="col-6">
+                        <h6>Age</h6>
+                        <p>{{response.age}}</p>
+                    </div>
+                </div>
+                <br><br>
+                <!-- second row -->
+                <div class="row">
+                    <div class="col-6">
+                        <h6>Weight</h6>
+                        <p>{{response.weight}}</p>
+                    </div>
+
+
+                    <!--  -->
+                    <div class="col-6">
+                        <h6>Height</h6>
+                        <p>{{response.height}}</p>
+                    </div>
+                </div>
+
+
+
+                <!-- button -->
+                <div><button (click)="click()" class="btn btn-primary">Refresh</button></div>
+            </div>
+            <!-- second column -->
+            <div class="col-5 d-flex flex-column justify-content-between align-items-center ">
+                <br>
+
+
+
+                <div>
+                    <h6>Home address</h6>
+                    <p>{{response.address.address}}</p>
+                </div>
+                <!--  -->
+                <br>
+
+
+                <div>
+                    <h6>Mobile phone</h6>
+                    <p>{{response.phone}}</p>
+                </div>
+                <!--  -->
+                <br>
+
+                <div>
+                    <h6>Company</h6>
+                    <p>{{response.company.name}}</p>
+                </div>
+                <!--  -->
+                <br>
+
+
+                <div>
+                    <h6>Job Title</h6>
+                    <p>{{response.company.title}}</p>
+                </div>
+                <!--  -->
+                <br>
+
+                <div>
+                    <h6>Email</h6>
+                    <p>{{response.email}}</p>
+                </div>
+                <!--  -->
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
